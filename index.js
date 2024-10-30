@@ -5,7 +5,7 @@ function generatePoem(response) {
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
-    cursor: "✍️",
+    cursor: "🥃",
     delay: 20,
   });
 }
@@ -16,12 +16,12 @@ function tellPoem() {
   let userPrompt = document.querySelector("#userPrompt");
   let apiKey = "a3co8cfc69t20f3a05200f0a3ac4b3e8";
   let context =
-    "You are a poetic AI assistant. Format the response in HTML without using backticks or extra code syntax.";
-  let prompt = `Please generate a short poem about ${userPrompt.value}, limited to four lines, formatted in basic HTML elements only. Sign the poem at the end with '<strong>SheCodes AI</strong>'. Do not include backticks or other code symbols.`;
+    "You are a expert AI cocktail assistant. Format the response in HTML without using backticks or extra code syntax.";
+  let prompt = `Please generate a whisky cocktail recipe with ${userPrompt.value},  formatted in basic HTML elements only. Sign the receipe at the end with '<strong>SheCodes AI</strong>'. Do not include backticks or other code symbols.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
-  poemElement.innerHTML = `SheCodes AI is generating a poem for you about ${userPrompt.value}...`;
+  poemElement.innerHTML = `SheCodes AI is generating a whisky cocktail for you using ${userPrompt.value}...`;
 
   console.log(apiUrl);
   console.log("Generating a poem");
