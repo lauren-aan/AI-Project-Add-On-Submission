@@ -1,0 +1,82 @@
+:root {
+  --body-font-family: "Poppins", sans-serif;
+  --body-font-font-style: normal;
+  --body-font-font-weight: 400;
+  --body-font-text-transform: none;
+  --body-font-letter-spacing: 0.08em;
+
+  --primary-color: #fafafa;
+  --secondary-color: #4a4a4a;
+  --third-color: #f6f1ec;
+  --footer-color: #788588;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  background: var(--primary-color);
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.4em;
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  color: var(--secondary-color);
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: auto;
+  background: var(--footer-color);
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 300;
+  font-size: x-small;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 600px;
+  margin: 120px auto;
+  background: var(--primary-color);
+  text-align: center;
+  border: var(--secondary-color);
+  border-style: solid;
+}
+
+form {
+  padding: 30px;
+  /* background-color: white; */
+  /* display: flex is stopping the submit bottom wrapping to bottom when screen smaller */
+  display: flex;
+}
+
+.prompt {
+  padding: 10px;
+  width: 80%;
+  /* box-shadow: var(--box-shadow); */
+}
+
+.submit-button {
+  padding: 10px;
+  margin-left: 10px;
+  /* box-shadow: var(--box-shadow); */
+}
+
+.poem {
+  /* background: white; */
+  line-height: 2;
+  /* border-left: 3px solid; */
+  /* border-color: var(--secondary-color); */
+}
